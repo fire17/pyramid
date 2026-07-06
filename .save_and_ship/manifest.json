@@ -1,32 +1,68 @@
 {
-  "project": "Pyramid",
-  "created": "2026-07-06",
-  "updated": "2026-07-06",
-  "sessions": ["880c944b-c0b2-4468-b00d-35fb4aa82036"],
-  "mode_history": ["FRESH 2026-07-06"],
-  "conversation": [
-    {
-      "file": "conversation/880c944b-c0b2-4468-b00d-35fb4aa82036.jsonl",
-      "source": "~/.claude/projects/-Users-magic-Tokenomics/880c944b-c0b2-4468-b00d-35fb4aa82036.jsonl",
-      "point_in_time": true,
-      "copy_sha256_prefix": "a00dc1cb808ca9a8c11843dd",
-      "cmp_verified": true
-    },
-    {
-      "file": "conversation/cship-880c944b-c0b2-4468-b00d-35fb4aa82036.json",
-      "source": "~/.cship/live/880c944b-c0b2-4468-b00d-35fb4aa82036.json",
-      "point_in_time": true
-    }
-  ],
-  "files": [
-    {"dest": "skills/pyramid/SKILL.md", "source": "~/.claude/skills/pyramid/SKILL.md", "new_this_session": true},
-    {"dest": "skills/pyr/SKILL.md.symlink-target-copy", "source": "~/.claude/skills/pyr/SKILL.md (symlink -> ../pyramid/SKILL.md)", "note": "alias stored as plain copy; live form is a symlink", "new_this_session": true},
-    {"dest": "skills/workflow-model-guard/SKILL.md", "source": "~/.claude/skills/workflow-model-guard/SKILL.md", "changed_this_session": "added sonnet tier row"},
-    {"dest": "files/memory/opus-sonnet-pyramid.md", "source": "~/.claude/projects/-Users-magic-Tokenomics/memory/opus-sonnet-pyramid.md", "new_this_session": true},
-    {"dest": "files/memory/pause-means-park-agents.md", "source": "~/.claude/projects/-Users-magic-Tokenomics/memory/pause-means-park-agents.md", "new_this_session": true}
-  ],
-  "vault_synced": ["Skills/pyramid", "Skills/pyr", "Skills/workflow-model-guard"],
-  "delta_set": ["skills/pyramid", "skills/pyr", "skills/workflow-model-guard", "files/memory/opus-sonnet-pyramid.md", "files/memory/pause-means-park-agents.md"],
-  "last_shipped": null,
-  "notes": "Tokenomics repo work of this session intentionally NOT snapshotted here — it lives in its own git repo (/Users/magic/Tokenomics) with its own ledger (.deify/review-2026-07-06/, PAUSE-CHECKPOINT-2026-07-06.md)."
+ "project": "Pyramid",
+ "created": "2026-07-06",
+ "updated": "2026-07-06",
+ "sessions": [
+  "880c944b-c0b2-4468-b00d-35fb4aa82036"
+ ],
+ "mode_history": [
+  "FRESH 2026-07-06"
+ ],
+ "conversation": [
+  {
+   "file": "conversation/880c944b-c0b2-4468-b00d-35fb4aa82036.jsonl",
+   "source": "~/.claude/projects/-Users-magic-Tokenomics/880c944b-c0b2-4468-b00d-35fb4aa82036.jsonl",
+   "point_in_time": true,
+   "copy_sha256_prefix": "a00dc1cb808ca9a8c11843dd",
+   "cmp_verified": true
+  },
+  {
+   "file": "conversation/cship-880c944b-c0b2-4468-b00d-35fb4aa82036.json",
+   "source": "~/.cship/live/880c944b-c0b2-4468-b00d-35fb4aa82036.json",
+   "point_in_time": true
+  }
+ ],
+ "files": [
+  {
+   "dest": "skills/pyramid/SKILL.md",
+   "source": "~/.claude/skills/pyramid/SKILL.md",
+   "new_this_session": true
+  },
+  {
+   "dest": "skills/pyr/SKILL.md.symlink-target-copy",
+   "source": "~/.claude/skills/pyr/SKILL.md (symlink -> ../pyramid/SKILL.md)",
+   "note": "alias stored as plain copy; live form is a symlink",
+   "new_this_session": true
+  },
+  {
+   "dest": "skills/workflow-model-guard/SKILL.md",
+   "source": "~/.claude/skills/workflow-model-guard/SKILL.md",
+   "changed_this_session": "added sonnet tier row"
+  },
+  {
+   "dest": "files/memory/opus-sonnet-pyramid.md",
+   "source": "~/.claude/projects/-Users-magic-Tokenomics/memory/opus-sonnet-pyramid.md",
+   "new_this_session": true
+  },
+  {
+   "dest": "files/memory/pause-means-park-agents.md",
+   "source": "~/.claude/projects/-Users-magic-Tokenomics/memory/pause-means-park-agents.md",
+   "new_this_session": true
+  }
+ ],
+ "vault_synced": [
+  "Skills/pyramid",
+  "Skills/pyr",
+  "Skills/workflow-model-guard"
+ ],
+ "delta_set": [
+  "skills/pyramid",
+  "skills/pyr",
+  "skills/workflow-model-guard",
+  "files/memory/opus-sonnet-pyramid.md",
+  "files/memory/pause-means-park-agents.md"
+ ],
+ "last_shipped": "2026-07-06 v0.1.0",
+ "notes": "Tokenomics repo work of this session intentionally NOT snapshotted here \u2014 it lives in its own git repo (/Users/magic/Tokenomics) with its own ledger (.deify/review-2026-07-06/, PAUSE-CHECKPOINT-2026-07-06.md).",
+ "repo": "https://github.com/fire17/pyramid"
 }

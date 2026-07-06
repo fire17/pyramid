@@ -1,0 +1,31 @@
+name: ci
+on:
+  push: {branches: [main]}
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: banner is well-formed SVG
+        run: python3 -c "import xml.etree.ElementTree as ET; r=ET.parse('assets/banner.svg').getroot(); assert r.tag.endswith('svg'), r.tag; print('banner OK:', r.get('width'), 'x', r.get('height'))"
+      - name: skill frontmatter carries the required keys
+        run: |
+          python3 - <<'EOF'
+          s = open('skills/pyramid/SKILL.md').read()
+          assert s.startswith('---'), 'missing frontmatter'
+          fm = s.split('---')[1]
+          for key in ('name:', 'description:', 'argument-hint:'):
+              assert key in fm, f'frontmatter missing {key}'
+          for law in ('3 sonnet', 'PARK', 'NEVER spawn Fable'):
+              assert law in s, f'doctrine law missing from skill: {law}'
+          print('skill frontmatter + core laws present')
+          EOF
+      - name: every relative link in the README resolves
+        run: |
+          python3 - <<'EOF'
+          import re, os, sys
+          bad = [t for t in re.findall(r'\]\(([^)#h][^)]*)\)', open('README.md').read())
+                 if not os.path.exists(t)]
+          sys.exit(f'MISSING: {bad}' if bad else print('all relative links resolve') or 0)
+          EOF
